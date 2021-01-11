@@ -1,29 +1,160 @@
 
-// #headerImg{
 
-//     background-image: url(../../public/img/imgBureau.jpg);
-//     background-repeat: no-repeat;
-//     background-color: red;
-//     height: 10rem;
-//     width: 10rem;
-//     border: solid black 2px ;
-// }
+// ------------------------------- header  ------------------------------- 
+
+
+// --------------- partie 1: navBar --------------- 
 
 .navbar{
 
-    border: solid black 2px;
+    border-bottom: solid rgba(250, 250, 250, 0.3) 1px;
+    border-top:solid rgba(250, 250, 250, 0.3) 1px;
     
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;   
+    transition: all 0.25s ease-in-out;
 }
+
+.scroll{
+
+    background-color: $blanc;
+    border-top: solid rgba(78, 78, 78, 0.4)  1px; 
+    border-bottom: solid rgba(78, 78, 78, 0.4)  1px;
+}
+
+.navbar-toggler{
+
+    background-color: $orange;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 10px ;
+
+}
+
+.ligne{
+
+    color: $blanc;
+}
+
 
 .logo{
 
-    flex: 3;
-    text-align: center;
+    flex: 5;
+    margin-left: 25px;
     font-size: 35px;
+    color: $blanc;
     
-  
+    // background-color: yellow;
 }
 
-// .choix{
+.logoScroll{
 
-// }
+    color: $noir;
+}
+
+.logo:hover{
+
+    color: $orange;
+}
+
+
+.tabChoix{
+    
+    // background-color: green;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 150vh;
+
+}
+
+.choix{
+
+    color: $blanc;
+    text-align: right;
+    padding: 30px 0px 30px 0px ;
+    margin-left: 10px;
+    margin-right:25px ;
+    border-left: rgba(250, 250, 250, 0.3) solid 1px;
+    // background-color: red;
+
+}
+
+.choixScroll{
+
+    color: $noir;
+    border-left: rgba(78, 78, 78, 0.4) solid 1px ;
+}
+
+.choix:hover{
+    color: $orange;
+}
+
+.active {
+    color: $orange;
+}
+
+// --------------- partie 2: bg-img  --------------- 
+
+#home{
+
+    height: 100vh;
+    max-width: 100%;
+}
+
+#bgHome{
+
+
+    background-image: url(../../../public/img/idee6.jpg);
+    height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.texteHome{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding-top: 50px;
+    height: 100vh;
+    width:80%;
+    // background-color: red;
+    color: $blanc;
+    text-align: center;
+    
+}
+
+.autoText{
+
+    border-right: 0.1em solid $orange;
+    letter-spacing: 0.05em;
+    animation: clignoter 0.7s step-end infinite;
+} 
+
+@keyframes clignoter{
+
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: $orange;
+    }
+
+}
+
+
+

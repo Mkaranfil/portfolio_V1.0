@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio MK</title>
-    <!-- lien css -->
-    <link rel="stylesheet" href="./public/css/app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio MK</title>
+  <!-- lien css -->
+  <link rel="stylesheet" href="./public/css/app.css">
 </head>
+
 <body>
 
-<!-- ---------------------- debut header ---------------------- -->
-<header>
+  <!-- ---------------------- debut header ---------------------- -->
+  <header class="">
 
-<!-- navBar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="logo navbar-brand" href="#">MK</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="choix nav-link active " href="#">HOME<span class="sr-only">(current)</span></a>
-        <a class="choix nav-link" href="#">ABOUT</a>
-        <a class="choix nav-link" href="#">RESUME</a>
-        <a class="choix nav-link" href="#">SERVICES</a>
-        <a class="choix nav-link" href="#">PORTFOLIO</a>
-        <a class="choix nav-link" href="#">CONTACT</a>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <a class="logo navbar-brand" href="#"> MK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ligne"><i class="fas fa-lg fa-ellipsis-v"></i></span>
+      </button>
+      <div class="tabChoix collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="choix nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a>
+          <a class="choix nav-link " href="#about">ABOUT</a>
+          <a class="choix nav-link" href="#resume">RESUME</a>
+          <a class="choix nav-link" href="#services">SERVICES</a>
+          <a class="choix nav-link" href="#portfolio">PORTFOLIO</a>
+          <a class="choix nav-link " href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End navBar -->
+
+    <!-- section1:home -->
+    <section id="home">
+
+      <div id="bgHome">
+
+        <div class="texteHome">
+
+          <h2 style="font-size: 3rem; margin-bottom: 20px;" >Hi There, I'm</h2>
+          <h1 style="font-size: 5rem; margin-bottom: 20px;" >Mustafa Karanfil</h1>
+          <h2 style="font-size: 3rem;">I'm <span class="autoText" style="font-size: 3rem;">Developer</span></h2>
+         
+        </div>
 
       </div>
+
+    </section>
+  </header>
+
+  <!-- ---------------------- debut Section 1  ---------------------- -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="imgAbout">
+        <img src="" alt="">
+      </div>
+
+      <div class="textAbout">
+        <h3>
+
+        </h3>
+
+        <h5>
+
+        </h5>
+
+        <p>
+
+        </p>
+
+        <p>
+
+        </p>
+
+        <div class="btnContact"></div>
+      </div>
+
+
+
+
     </div>
-  </nav>
-<!-- End navBar -->
 
-
-</header>
+  </section>
 
 
 
 
 
-<!-- lien JS -->
-<script src="./public/js/main.js"></script>
-<!-- Jquery -->
-<script src="./node_modules/jquery/dist/jquery.js"></script> 
-<!-- Bootstrap --> 
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- lien JS -->
+  <script src="./public/js/main.js"></script>
+  <!-- Jquery -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </html>
