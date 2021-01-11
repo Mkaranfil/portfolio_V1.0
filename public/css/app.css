@@ -15856,7 +15856,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #bgHome {
-  background-image: url(../../../public/img/idee6.jpg);
+  background-image: url(../../public/img/idee6.jpg);
   height: 100vh;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -15906,6 +15906,43 @@ body {
   padding: 0px;
 }
 
+#about {
+  width: 100%;
+  height: 90vh;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about > .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgAbout {
+  border: solid 4px #FD7013;
+}
+
+.textAbout {
+  width: 60%;
+  color: #EEEEEE;
+}
+
+.btnContact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnAbout {
+  background-color: #FD7013;
+  color: #EEEEEE;
+  border-radius: 0px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .logo {
     flex: none;
@@ -15938,6 +15975,27 @@ body {
   .texteHome > h2 > span {
     font-size: 1.5rem !important;
   }
+  #about {
+    height: auto;
+  }
+  #about > .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgAbout {
+    margin-top: 5vh;
+  }
+  .textAbout {
+    width: auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .textAbout > h3 {
+    font-size: 2.5rem !important;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -15961,5 +16019,26 @@ body {
   .texteHome > h1 {
     text-align: center;
     width: 750px;
+  }
+  #about {
+    height: auto;
+  }
+  #about > .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgAbout {
+    margin-top: 5vh;
+  }
+  .textAbout {
+    width: auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .textAbout > h3 {
+    font-size: 3rem !important;
   }
 }
