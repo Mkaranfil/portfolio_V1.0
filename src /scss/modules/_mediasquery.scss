@@ -89,7 +89,35 @@
          font-size: 2.5rem !important; 
      }
      
+     //  -------------------------- Section 2: resume -------------------------- 
+
+    #resume{
+
+        height: auto;
+    }
     
+    #resume>.container{
+
+        margin-top: 20px;
+    }
+
+    #resume>.container>.row{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .education{
+        width: 100%;
+    }
+
+    .skills{
+        width: 100%;
+
+    }
+
+
+
 
 }
 
@@ -180,6 +208,49 @@
         font-size: 3rem !important; 
     }
     
+     //  -------------------------- Section 2: resume -------------------------- 
+
+     #resume{
+
+        height: auto;
+    }
+    
+    #resume>.container{
+
+        margin-top: 20px;
+    }
+
+    #resume>.container>.row{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .education{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .educListe{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // background-color: blue;
+        height: 30vh;
+
+    }
+
+    .skills{
+        width: 100%;
+        height: 54vh;
+    }
+
+
+    .ajust{
+
+        height: 43vh;
+    }
 
 }
 

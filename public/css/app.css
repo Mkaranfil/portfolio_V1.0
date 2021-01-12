@@ -15943,6 +15943,105 @@ body {
   border-radius: 0px;
 }
 
+#resume {
+  width: 100%;
+  height: 90vh;
+  background-color: #393E46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume > .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume > .container > .row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.education {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 35%;
+  height: 70vh;
+  background-color: #222831;
+}
+
+.miniTitre {
+  background-color: #393E46;
+  color: #FD7013;
+  padding-bottom: 5px;
+  border: none;
+}
+
+.educListe > li {
+  list-style: none;
+  color: #EEEEEE;
+}
+
+.educListe {
+  margin-top: 10px;
+}
+
+.date {
+  background-color: #FD7013;
+  border-radius: 10px;
+  padding: 3px 5px 3px 5px;
+  color: #EEEEEE;
+}
+
+.educListe > li > h6 {
+  margin: 10px 0px 0px 0px;
+  font-size: 19px;
+}
+
+hr {
+  width: 30px;
+  padding: 1px 0px 1px 0px;
+  margin: 5px 0px 35px 0px;
+  background-color: #FD7013;
+}
+
+.skills {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 35%;
+  height: 70vh;
+  background-color: #222831;
+}
+
+.ajust {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 55vh;
+}
+
+.skill-box {
+  height: 50vh;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-box > div {
+  margin: 15px 11px 0px 11px;
+}
+
+.progress-bar {
+  background-color: #FD7013;
+}
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .logo {
     flex: none;
@@ -15996,6 +16095,22 @@ body {
   .textAbout > h3 {
     font-size: 2.5rem !important;
   }
+  #resume {
+    height: auto;
+  }
+  #resume > .container {
+    margin-top: 20px;
+  }
+  #resume > .container > .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .education {
+    width: 100%;
+  }
+  .skills {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -16040,5 +16155,32 @@ body {
   }
   .textAbout > h3 {
     font-size: 3rem !important;
+  }
+  #resume {
+    height: auto;
+  }
+  #resume > .container {
+    margin-top: 20px;
+  }
+  #resume > .container > .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .education {
+    width: 100%;
+    height: 40vh;
+  }
+  .educListe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+  }
+  .skills {
+    width: 100%;
+    height: 54vh;
+  }
+  .ajust {
+    height: 43vh;
   }
 }
