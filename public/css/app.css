@@ -16004,7 +16004,7 @@ body {
   font-size: 19px;
 }
 
-hr {
+.hrRes {
   width: 30px;
   padding: 1px 0px 1px 0px;
   margin: 5px 0px 35px 0px;
@@ -16040,6 +16040,82 @@ hr {
 
 .progress-bar {
   background-color: #FD7013;
+}
+
+#services {
+  height: 90vh;
+  background-color: #222831;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigTitre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ensemble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ensemble > h3 {
+  font-size: 65px;
+}
+
+.ensemble > hr {
+  background-color: #FD7013;
+  width: 55px;
+  height: 3px;
+  margin: 0px 0px 18px 0px;
+}
+
+.ensemble > p {
+  font-size: 22px;
+}
+
+.bbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+  height: 50vh;
+}
+
+.box {
+  background-color: #393E46;
+  width: 80%;
+  height: 45vh;
+  box-shadow: 4px 4px 4px rgba(202, 125, 9, 0.315);
+}
+
+.box:hover {
+  background-color: #FD7013;
+}
+
+.icon {
+  color: #FD7013;
+  text-align: left;
+  margin: 15px 0px 0px 15px;
+}
+
+.icon:hover {
+  color: #EEEEEE;
+}
+
+.contenu {
+  margin: 35px 15px 5px 15px;
+}
+
+.contenu > h5 {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -16110,6 +16186,17 @@ hr {
   }
   .skills {
     width: 100%;
+  }
+  #services {
+    height: auto;
+  }
+  .ensemble > h3 {
+    font-size: 40px;
+  }
+  .ensemble > p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 3px 0px 3px;
   }
 }
 
@@ -16182,5 +16269,8 @@ hr {
   }
   .ajust {
     height: 43vh;
+  }
+  #services {
+    height: auto;
   }
 }
